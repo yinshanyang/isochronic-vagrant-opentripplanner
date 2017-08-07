@@ -1,0 +1,17 @@
+# (ISO)SURFACES
+
+## list
+curl '192.168.33.10:8080/otp/surfaces'
+
+## create
+curl -X POST '192.168.33.10:8080/otp/surfaces?batch=true&fromPlace=1.3331336,103.7422884&date=06-01-2017&time=12:00pm&maxWalkDistance=50000&cutoffMinutes=240'
+
+## query
+curl '192.168.33.10:8080/otp/surfaces/0/indicator?targets=point-grid&detail=true'
+
+
+
+# POINT SETS
+
+## list
+curl '192.168.33.10:8080/otp/pointsets'
