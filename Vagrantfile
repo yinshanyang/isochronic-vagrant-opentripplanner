@@ -5,7 +5,7 @@ Vagrant.configure(2) do |config|
     v.cpus = 2
   end
 
-  config.vm.box = "ubuntu/xenial64/docker"
+  config.vm.box = "envimation/ubuntu-xenial-docker"
   config.vm.network "private_network", ip: "192.168.33.10"
 
   config.vm.provision "shell", inline: <<-SHELL
